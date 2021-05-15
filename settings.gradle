@@ -1,0 +1,3 @@
+include ':UAdmin'
+include ':app'
+rootProject.name = "UReward"

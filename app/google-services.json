@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1006986667823",
+    "project_id": "uproject-c483b",
+    "storage_bucket": "uproject-c483b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1006986667823:android:8483ab8c22c0876e5223da",
+        "android_client_info": {
+          "package_name": "com.htech.ureward"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1006986667823-qfr46ki4v7ef5ta1ob6ebrthc0517d7k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.htech.ureward",
+            "certificate_hash": "21afd60c9f96b5ae574a8a4e909f493582352c31"
+          }
+        },
+        {
+          "client_id": "1006986667823-99ad04lrcdsa6hgttbjpk7qt4e7pd1e2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBge4yTfc1VAqbwEDPyLdZ_SodcuFnVVTw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1006986667823-99ad04lrcdsa6hgttbjpk7qt4e7pd1e2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

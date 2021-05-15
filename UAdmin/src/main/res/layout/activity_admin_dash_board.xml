@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminDashBoard">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/scrlCat"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:background="@drawable/adminback"
+                android:layout_height="200dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center"
+                    android:shadowColor="#8BC34A"
+                    android:shadowDy=".5"
+                    android:text="Admin Pannel"
+                    android:textColor="#fff"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.40" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/linear11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="156dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/constraintLayout">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="130dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="5dp"
+                    app:cardCornerRadius="8dp"
+                    android:id="@+id/addYoutube"
+                    android:layout_weight="1.3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="149dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_youtube"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|bottom"
+                            android:text="YT URL"
+                            android:textSize="24sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="130dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="16dp"
+                    android:id="@+id/addUrl"
+                    android:layout_weight="1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="149dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_url"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|bottom"
+                            android:text="Other URL"
+                            android:textSize="24sp" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linear11">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="130dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/addGallery"
+                    android:layout_weight="1.2"
+                    app:cardCornerRadius="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="149dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_galleryy"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|bottom"
+                            android:text="Gallery Vid"
+                            android:textSize="24sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="130dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="16dp"
+                    android:id="@+id/delVideo"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="149dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:scaleType="centerCrop"
+                            android:layout_marginTop="20dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_delete"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|bottom"
+                            android:text="Delete Video"
+                            android:textSize="24sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linear23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linear22">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="130dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/catDelNews"
+                    android:layout_weight="1.8"
+                    app:cardCornerRadius="5dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="149dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_users"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|bottom"
+                            android:text="Users"
+                            android:textSize="24sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="130dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="16dp"
+                    android:id="@+id/delCat"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="5dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="149dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:scaleType="centerCrop"
+                            android:layout_marginTop="20dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_noti"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|bottom"
+                            android:text="Notification"
+                            android:textSize="24sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

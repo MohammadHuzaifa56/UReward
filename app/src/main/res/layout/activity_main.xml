@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_back"
+    tools:context=".MainActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:fitsSystemWindows="true">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:background="@drawable/home_back"
+            app:contentScrim="@color/pink"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:orientation="vertical">
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/coinanim"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Daily Rewards"
+                        android:shadowDx=".5"
+                        android:id="@+id/tvDailyReward"
+                        android:shadowRadius=".4"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/birdsfont"
+                        android:textColor="#fff"/>
+                </LinearLayout>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="15dp"
+                    app:civ_border_width="1dp"
+                    android:id="@+id/imgUser"
+                    android:layout_centerVertical="true"
+                    app:civ_border_color="#fff"
+                    android:src="@drawable/icuser"/>
+            </RelativeLayout>
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:id="@+id/btnnav"
+                        android:layout_alignParentStart="true"
+                        android:src="@drawable/ic_nav"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        android:text="Home"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/btnnav"/>
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="8dp"
+                        android:id="@+id/btnNoti"
+                        android:src="@drawable/ic_noti"
+                        android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+        <com.htech.ureward.views.VideoPlayerRecyclerView
+            android:layout_width="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:id="@+id/recVideos"
+            android:layout_marginTop="10dp"
+            tools:listitem="@layout/video_card"
+            android:layout_height="wrap_content" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

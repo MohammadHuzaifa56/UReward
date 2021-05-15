@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
+    android:id="@+id/cardUsers"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        app:civ_border_color="@color/pink"
+        app:civ_border_width="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Salman Ahmad"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/circleImageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:drawableLeft="@drawable/ic_location"
+        android:drawablePadding="5dp"
+        android:text="Multan"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/circleImageView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/phone"
+        android:text="03056079804"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:id="@+id/usPhone"
+        android:drawableTint="#000"
+        android:drawablePadding="5dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintStart_toEndOf="@+id/circleImageView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
